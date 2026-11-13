@@ -55,7 +55,7 @@ Step 1: Establish a standard term mapping table. The AI security and trustworthi
       - AML.T0024.002 (Extract AI Model)
       - Model leakage
 
-NOTE – The corresponding entries in Table 1 are taken from ETSI TS 104 050 [b-ETSI-AITONT], MITRE ATLAS™ [b-MITRE-ATLAS] and the NIST AI Risk Management Framework [b-NIST-AIRMF]. MITRE ATLAS is the AI-focused knowledge base that complements MITRE ATT&CK® [b-MITRE-ATT&CK], which does not itself define AI-specific techniques for these threats.
+NOTE – The corresponding entries in Table 1 are taken from ETSI TS 104 050 [b-ETSI-AITONT], MITRE ATLAS [b-MITRE-ATLAS] and the NIST AI Risk Management Framework [b-NIST-AIRMF]. MITRE ATLAS is the AI-focused knowledge base that complements MITRE ATT&CK® [b-MITRE-ATT&CK], which does not itself define AI-specific techniques for these threats.
 
 **Step 2: Enable cross-standard querying and reasoning.** Based on the ontology’s unified conceptual framework, experts can use standard query languages such as SPARQL to retrieve relevant information from different standard sources in a single pass. For example, when querying “all security control requirements related to LLM prompt injection”, the system automatically maps the query to the corresponding terms from ETSI, MITRE, NIST, and other sources, returning integrated results.
 

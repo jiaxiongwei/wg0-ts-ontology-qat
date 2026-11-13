@@ -10,7 +10,7 @@ Evaluation metrics
 
 > Assessment method: Syntax checking using Pellet, HermiT, and other reasoners.
 
-2)  **Class Hierarchy Depth** — Maximum depth of the inheritance tree (recommended ≤ 5 levels).
+2)  **Class Hierarchy Depth** — Maximum depth of the inheritance tree (recommended :math:`\leq` 5 levels).
 
 > Assessment method: Automated calculation.
 
@@ -65,6 +65,6 @@ Modularity is evaluated through a combined approach of graph theory analysis and
 
 **d) Validation of recommended ranges**
 
-The recommended ranges for hierarchy depth (≤ 5 levels) and average subclass count (2–12 per class) are assessed against established ontology engineering best practices. If the calculated values deviate from these ranges, the ontology is flagged for expert review to determine whether the deviation is justified by the domain complexity or indicates a structural flaw.
+The recommended ranges for hierarchy depth (:math:`\leq` 5 levels) and average subclass count (2–12 per class) are assessed against established ontology engineering best practices. If the calculated values deviate from these ranges, the ontology is flagged for expert review to determine whether the deviation is justified by the domain complexity or indicates a structural flaw.
 
 The results from automated tools and expert reviews are consolidated to produce a comprehensive structural quality score for the ontology. Any identified issues (e.g., inconsistencies, excessive depth, low property richness) are recorded as part of the assessment report with actionable improvement recommendations.

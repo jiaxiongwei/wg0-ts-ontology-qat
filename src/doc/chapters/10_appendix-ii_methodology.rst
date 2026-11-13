@@ -102,7 +102,7 @@ Phase 3: Ontology design and formalization
 1.  Class hierarchy (taxonomy) design:
 - Organize confirmed terms into classes and establish is-a inheritance systems;
 - Use the classification framework of the ETSI AI Threat Ontology as a reference for top-level design;
-- Ensure reasonable depth and breadth of the class hierarchy (recommended depth ≤ 5 levels, average 2–12 subclasses per class);
+- Ensure reasonable depth and breadth of the class hierarchy (recommended depth :math:`\leq` 5 levels, average 2–12 subclasses per class);
 - Adopt modular design, dividing the ontology into independently reusable modules.
 2.  Property and relation definition:
 - Define object properties to express semantic relations between concepts;
@@ -218,4 +218,4 @@ A completed AI security and trustworthiness ontology satisfies all requirements 
 - AI concept coverage rate of no less than 80% of the core concepts of reference ontologies (e.g., AIO);
 - Core term alignment rate with published ITU-T standards of no less than 90%;
 - Ability to correctly answer no less than 80% of predefined competency questions;
-- Comprehensive quality score of no less than the Acceptable level (≥ 60 points).
+- Comprehensive quality score of no less than the Acceptable level (:math:`\geq` 60 points).

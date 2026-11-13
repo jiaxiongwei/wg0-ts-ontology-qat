@@ -41,7 +41,7 @@ Bibliography
     MITRE. *ATT&CK® Framework*. https://attack.mitre.org/
 
 [b-MITRE-ATLAS]
-    MITRE. ATLAS™ Adversarial Threat Landscape for Artificial-Intelligence Systems. https://atlas.mitre.org/
+    MITRE. ATLAS Adversarial Threat Landscape for Artificial-Intelligence Systems. https://atlas.mitre.org/
 
 [b-NEO4J]
     Neo4j. *Neo4j Graph Database Platform*. https://neo4j.com/

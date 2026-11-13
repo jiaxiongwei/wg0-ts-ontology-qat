@@ -43,7 +43,7 @@ Specifically, an AI security and trustworthiness ontology covers two core dimens
 
 The distinctiveness of an AI security and trustworthiness ontology, as compared to a general ontology or a general security ontology, is reflected in the following aspects:
 
-1)  Dual modelling objects: a general ontology models only a single domain of concepts, and a general security ontology models only security concepts, whereas an AI security and trustworthiness ontology simultaneously models both the "AI system" and "AI security" domains, which are interwoven, and precisely describes the causal relationships between them (e.g., "a certain AI architecture → has a certain vulnerability → can be exploited by a certain type of attack").
+1)  Dual modelling objects: a general ontology models only a single domain of concepts, and a general security ontology models only security concepts, whereas an AI security and trustworthiness ontology simultaneously models both the "AI system" and "AI security" domains, which are interwoven, and precisely describes the causal relationships between them (e.g., "a certain AI architecture :math:`\rightarrow` has a certain vulnerability :math:`\rightarrow` can be exploited by a certain type of attack").
 
 2)  Rapidly evolving domain characteristics: AI technology itself is in a phase of rapid development, with new model architectures, training methods, and application scenarios continuously emerging, and correspondingly, new security threats and defence measures are also proliferating. An AI security and trustworthiness ontology possesses a stronger capacity for dynamic evolution than traditional domain ontologies.
 
@@ -61,7 +61,7 @@ As an infrastructure item for standardization, the AI security and trustworthine
 Enabling semantic interoperability
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the field of AI security, different standards organizations, various security tools (STIX [b-OASIS-STIX], MITRE ATT&CK [b-MITRE-ATT&CK], MITRE ATLAS [b-MITRE-ATLAS], etc.), and diverse stakeholders (technical teams, compliance teams, management, etc.) each employ their own terminologies and conceptual frameworks. This inconsistency in terminology and semantic heterogeneity severely impedes the sharing of knowledge and cross‑organizational collaboration.
+In the field of AI security, different standards organizations, various security tools (STIX [b-OASIS-STIX], MITRE ATT&CK [b-MITRE-ATT&CK], MITRE ATLAS [b-MITRE-ATLAS], etc.), and diverse stakeholders (technical teams, compliance teams, management, etc.) each employ their own terminologies and conceptual frameworks. This inconsistency in terminology and semantic heterogeneity severely impedes the sharing of knowledge and cross-organizational collaboration.
 
 Ontology alignment is a key means of achieving semantic interoperability. By providing a unified, standardized conceptual framework, an AI security and trustworthiness ontology enables:
 
@@ -84,7 +84,7 @@ Ontologies provide precise concept definitions and relation constraints for LLMs
 
 2)  Supporting reasoning and decision-making by AI agents:
 
-With the rise of agentic AI, autonomous reasoning and decision‑making in complex environments have become essential for AI agents. Ontologies supply these agents with well‑defined entity types and explicit relational constraints, allowing them to formulate precise queries, navigate chains of relationships, and interpret the underlying causes of risky behaviour—rather than simply flagging anomalies. Practical experience shows that reasoning performance improves significantly when entities are unambiguously specified, relations are fixed, constraints are machine‑accessible, and contextual information remains coherent across different domains.
+With the rise of agentic AI, autonomous reasoning and decision-making in complex environments have become essential for AI agents. Ontologies supply these agents with well-defined entity types and explicit relational constraints, allowing them to formulate precise queries, navigate chains of relationships, and interpret the underlying causes of risky behaviour—rather than simply flagging anomalies. Practical experience shows that reasoning performance improves significantly when entities are unambiguously specified, relations are fixed, constraints are machine-accessible, and contextual information remains coherent across different domains.
 
 3)  Enabling bounded reasoning:
 

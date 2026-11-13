@@ -32,7 +32,7 @@ This example ontology demonstrates the key characteristics listed in Table 2:
       - Covers ITU-T standards and their associated security requirements
       - R-TS-03
     * - Logical Reasoning
-      - Supports property chain reasoning (e.g., `exploits` + `hasVulnerability` → `hasTarget`)
+      - Supports property chain reasoning (e.g., `exploits` + `hasVulnerability` :math:`\rightarrow` `hasTarget`)
       - R-SF-03, R-SF-04
     * - Cardinality Constraints
       - Each threat has at least one mitigation

@@ -14,7 +14,7 @@ Evaluation metrics
 
 > Assessment method: Construct a word-order variant test set and test the ontology’s recognition capability.
 
-3)  **Abbreviation Mapping Coverage Rate** — Whether the ontology covers mappings between common AI abbreviations and their full forms (e.g., LLM ↔ Large Language Model).
+3)  **Abbreviation Mapping Coverage Rate** — Whether the ontology covers mappings between common AI abbreviations and their full forms (e.g., LLM :math:`\leftrightarrow` Large Language Model).
 
 > Assessment method: Construct an abbreviation test set and check coverage.
 
