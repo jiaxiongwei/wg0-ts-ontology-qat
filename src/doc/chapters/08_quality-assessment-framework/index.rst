@@ -12,3 +12,7 @@ This clause defines the quality assessment framework. The framework assesses the
 .. include:: _dimension-6-standardization-compliance.rst
 .. include:: _comprehensive-quality-scoring-model.rst
 .. include:: _evaluation-process.rst
+
+.. raw:: latex
+
+    \setcounter{secnumdepth}{-1}
