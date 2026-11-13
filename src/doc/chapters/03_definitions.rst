@@ -6,8 +6,8 @@ Terms defined elsewhere
 
 This Technical Specification uses the following terms defined elsewhere:
 
-3.1.1 artificial intelligence
-    (**AI)** [b-ISO/IEC TR 24028]: capability of an engineered system to acquire, process and apply knowledge and skills.
+3.1.1 artificial intelligence (AI)
+    [b-ISO/IEC TR 24028]: capability of an engineered system to acquire, process and apply knowledge and skills.
 
 NOTE – Knowledge are facts, information and skills acquired through experience or education.
 
@@ -21,7 +21,8 @@ NOTE 2 – AI systems are designed to operate with varying levels of automation.
 3.1.3 attack
     [b-ISO/IEC 27000]: attempt to destroy, expose, alter, disable, steal or gain unauthorized access to or make unauthorized use of an asset.
 
-3.1.4 life cycle [b-ISO/IEC/IEEE 15288]: evolution of a system, product, service, project or other human-made entity, from conception through retirement.
+3.1.4 life cycle
+    [b-ISO/IEC/IEEE 15288]: evolution of a system, product, service, project or other human-made entity, from conception through retirement.
 
 3.1.5 model
     [b-ITU-T F.748.16]: an output created by an algorithm running on training data that can generate an inference or prediction, based on input data.
@@ -29,7 +30,8 @@ NOTE 2 – AI systems are designed to operate with varying levels of automation.
 3.1.6 machine learning
     [b-ISO/IEC 22989]: process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience.
 
-3**.1.7 ontology** [b-ITU-T Y.4500.12]: Formal specification of a conceptualization, i.e., defining concepts as objects with their properties and relationships versus other concepts.
+3.1.7 ontology
+    [b-ITU-T Y.4500.12]: Formal specification of a conceptualization, i.e., defining concepts as objects with their properties and relationships versus other concepts.
 
 3.1.8 risk
     [b-ITU-T X.1451]: effect of uncertainty on objectives.
@@ -48,8 +50,8 @@ NOTE 6 – Information security risk is associated with the potential that threa
 
 NOTE 7 – Based on the definition given in ISO Guide 73.
 
-3.1.9
-    **stakeholder** [b-ISO/IEC 22989]: any individual, group, or organization that can affect, be affected by or perceive itself to be affected by a decision or activity.
+3.1.9 stakeholder
+    [b-ISO/IEC 22989]: any individual, group, or organization that can affect, be affected by or perceive itself to be affected by a decision or activity.
 
 3.1.10 system
     [b-ISO/IEC TR 24028]: combination of interacting elements organized to achieve one or more stated purposes.
