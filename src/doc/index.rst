@@ -1,60 +1,114 @@
-
 .. raw:: latex
 
     \pagestyle{plain}
     \thispagestyle{plain}
-    %% Suppress all TOC entries for the overview chapter (sections, subsections,
-    %% Copyright addcontentsline) — restored just before \sphinxtableofcontents
-    %% so chapters from Introduction onward appear in the TOC normally.
+    %% Suppress all TOC entries for the front matter (sections, subsections and
+    %% any addcontentsline) — restored just before \sphinxtableofcontents so the
+    %% numbered clauses appear in the TOC normally.
     \let\osiaorigaddcontentsline\addcontentsline
     \renewcommand{\addcontentsline}[3]{}
 
-.. _chapter-overview:
+.. _front-matter:
+
+Quality requirements and assessment framework for ontology on security and trustworthiness in AI systems
+========================================================================================================
 
 .. only:: html
 
-    .. admonition:: This is a document template
-        :class: tip
-
-        Replace the ``<placeholders>`` and the *lorem ipsum* text throughout with
-        your own content. This landing page is the document's front matter:
-
-        * **Abstract**, **History**, **Authors**, **Keywords** and **Foreword**
-          are standard front-matter sections — keep them and fill them in.
-        * **Chapters 1–4** demonstrate the authoring system (text, figures,
-          tables, diagrams, and API references). Read them, then replace their
-          content with your specification.
-
-        This notice appears on the web version only; it is excluded from the
-        published PDF. See the project ``CONTRIBUTING`` guide for how to build and publish.
-
-Title of this document
-========================
-
-.. only:: html
-
-    **<subtitle of this document>**
+    **Draft new Technical Specification TS.ontology-qat — Quality requirements and assessment framework for ontology on security and trustworthiness in AI systems**
 
 .. raw:: latex
 
-    \begin{center}\textbf{<subtitle of this document>}\end{center}
+    \begin{center}\textbf{Draft new Technical Specification TS.ontology-qat — Quality requirements and assessment framework for ontology on security and trustworthiness in AI systems}\end{center}
 
 Abstract
 --------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+This contribution proposes a new work item of Technical Specification on "Quality requirements and assessment framework for ontology on security and trustworthiness in AI systems".
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Background
+----------
+
+Context of the study
+~~~~~~~~~~~~~~~~~~~~
+
+An ontology is a formal, explicit specification of a shared conceptualization — a structured knowledge model that defines the concepts, relationships, and logical constraints within a given domain. It provides a community with a shared vocabulary for organizing and exchanging knowledge, and enables machines to understand how entities in a domain are categorized and how they relate to one another. An AI security and trustworthiness ontology applies this methodology to the AI security domain, serving as a formal and shared description of concepts such as AI systems, threats, vulnerabilities, controls, mitigations, and incidents, as well as the causal relationships among them (e.g., a specific AI architecture exhibits a vulnerability that can be exploited by a particular type of attack).
+
+The functions of an AI security and trustworthiness ontology are multi-fold. It enables semantic interoperability across different standards, tools, and organizations by providing a unified conceptual framework for mapping disparate terminologies. It supports large language models (LLMs) and AI agents with structured knowledge anchors that reduce hallucination and enable bounded reasoning. It serves as the schema layer for constructing AI security knowledge graphs, transforming unstructured standards text into machine-readable, queryable, and inferable knowledge assets. It also promotes harmonization across standards by revealing logical relationships — such as inheritance, dependency, and complementarity — between requirements defined in different documents.
+
+Within ITU-T, SG17 has been actively advancing AI security standardization through a growing portfolio of work items, including X.sr-ai, X.sgGenAI, X.S-AIA, X.sr-da-gai, etc. The AI security and trustworthiness ontology serves as an important infrastructure for these efforts, providing a common semantic foundation that facilitates cross-standard consistency, knowledge reuse, and intelligent retrieval. In parallel, the rapid advancement of LLMs and agentic AI has created new demands for structured, machine-readable domain knowledge — a need that AI security and trustworthiness ontologies are uniquely positioned to address by providing deterministic entity definitions and verifiable relation constraints.
+
+Given this context, the study of requirements and quality assessment for AI security and trustworthiness ontologies is of critical importance. Establishing clear, systematic requirements ensures that ontologies developed for AI security standardization are comprehensive, consistent, and fit for purpose. An operational quality assessment framework enables objective evaluation and continuous improvement, guiding the evolution of ontologies as the AI security landscape evolves. Together, these elements provide the methodological foundation needed for AI security and trustworthiness ontologies to serve as reliable, maintainable, and interoperable assets for the international standardization community.
+
+Why this study is needed
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+An AI security and trustworthiness ontology is needed to address the following critical gaps:
+
+1)  **Semantic interoperability**: Different standards and tools use different terms for the same concept and the same term for different concepts, creating barriers to cross-system information exchange and collaboration.
+
+2)  **Cross-standard harmonization**: ITU-T SG17 is developing multiple AI security standards simultaneously. Without a shared ontology, requirements and definitions in these standards may be inconsistent, contradictory, or redundant.
+
+3)  **Machine-readable knowledge representation**: AI security knowledge is currently locked in unstructured natural language text within standards documents. An ontology enables the transformation of this knowledge into structured, machine-readable form that can be queried, reasoned over, and integrated with downstream applications.
+
+4)  **LLM and AI agent integration**: Emerging AI applications such as LLM-based question answering and autonomous AI agents require structured knowledge anchors to reduce hallucination and support bounded reasoning. Ontologies provide the deterministic entity definitions and relation constraints needed for reliable AI reasoning.
+
+5)  **Support for knowledge graph construction**: Ontologies serve as the schema layer for knowledge graphs, enabling systematic extraction, validation, and linking of AI security knowledge from standards documents into queryable knowledge bases.
+
+6)  **Domain complexity**: The AI security domain is inherently interdisciplinary (spanning computer science, mathematics, cognitive science, law, and ethics) and rapidly evolving. An ontology provides a modular, extensible framework that can adapt to new threats, technologies, and regulatory requirements over time.
+
+What this study is
+~~~~~~~~~~~~~~~~~~
+
+This study establishes a comprehensive framework for AI security and trustworthiness ontologies developed within the context of ITU-T SG17. It comprises two complementary parts:
+
+Part 1 defines a systematic set of requirements that an AI security and trustworthiness ontology satisfies. These requirements are organized into nine categories: AI concept coverage (ensuring the ontology adequately describes AI systems themselves), AI security domain coverage (covering threats, vulnerabilities, risks, and controls), compatibility with existing AI ontologies (e.g., AIO, W3C ML-Schema), terminological variant inclusivity (handling synonyms, abbreviations, and word-order variants), structural and formal rigour (taxonomy depth, logical axioms, OWL 2 compliance), terminological standardization (naming conventions and multilingual support), extensibility and maintainability (modular design and version management), interoperability and reusability (mapping to external ontologies such as ETSI AI Threat Ontology and NIST AI RMF), and usability (documentation, competency questions, and serialization formats).
+
+Part 2 defines an operational quality assessment framework comprising six evaluation dimensions: structural quality, AI concept coverage quality, semantic quality, terminological variant inclusivity quality, pragmatic quality, and standardization compliance. Each dimension has associated metrics, evaluation methods, and tools. A weighted scoring model produces a comprehensive quality score, and a four-level classification (Excellent, Good, Acceptable, Unacceptable) determines ontology readiness for standardization.
+
+The study is complemented by two illustrative use cases (semantic interoperability across standards and knowledge graph generation from standards documents), a detailed six-phase ontology construction methodology, and a reference OWL 2 ontology implementation in Turtle format.
+
+Key benefits
+~~~~~~~~~~~~
+
+This Recommendation provides the following key benefits to ITU-T SG17 and the broader international standardization community:
+
+1)  **Unified terminology**: Establishes a controlled, standardized core vocabulary for AI security, eliminating ambiguous or conflicting definitions across standards and enabling all stakeholders to “speak the same language”.
+
+2)  **Systematic requirements guidance**: Provides ontology developers with a clear, categorized set of requirements covering all critical dimensions of AI security and trustworthiness ontology quality, reducing the risk of incomplete or inconsistent ontology designs.
+
+3)  **Measurable quality assurance**: Offers an operational evaluation framework with defined metrics, methods, and tools for objectively assessing whether an ontology meets the specified requirements, supporting continuous improvement.
+
+4)  **Cross-standard harmonization**: Enables discovery of logical relationships (inheritance, dependency, complementarity, conflict) between requirements in different standards, supporting consistency review during standards development.
+
+5)  Semantic interoperability: Provides a semantic bridge between different SDOs (ITU-T, ETSI, ISO/IEC, NIST), security tools (STIX, MITRE ATT&CK, MITRE ATLAS), and stakeholder groups, enabling automated cross-standard mapping and information exchange.
+
+6)  **LLM and AI readiness**: Delivers structured, machine-readable knowledge foundations that can be integrated with LLMs for hallucination-reduced question answering and with AI agents for bounded reasoning and decision support.
+
+7)  **Knowledge graph enablement**: Provides the schema layer for constructing AI security knowledge graphs from standards documents, transforming static text into dynamic, queryable, and inferable knowledge assets.
+
+8)  **Future-proof extensibility**: The modular design and explicit variant-handling mechanisms ensure the ontology can evolve with the AI security domain, accommodating new threats, technologies, and standards without structural disruption.
+
+Proposal for new work item
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This proposal requests the establishment of a new work item in ITU-T SG17 on the topic “Requirements and quality assessment framework for AI security and trustworthiness ontology”.
+
+This work item studies the specification of requirements and the design of a quality assessment framework for AI security and trustworthiness ontologies within the context of ITU-T SG17 and related international standardization activities. It covers nine categories of requirements — AI concept coverage, AI security domain coverage, compatibility with existing AI ontologies, terminological variant inclusivity, structural and formal rigour, terminological standardization, extensibility and maintainability, interoperability and reusability, and usability — and a six-dimension evaluation framework with associated metrics, methods, and a weighted scoring model for determining ontology readiness for standardization. The work item also provides illustrative use cases, ontology construction methodology guidance, and a reference OWL 2 ontology implementation. It applies to ontologies that model both AI systems themselves (as objects of security protection) and AI security domain knowledge, without prescribing specific ontologies.
+
+The A.1 justification for this proposal is provided in Annex A, and the initial text is provided in Annex B.
+
+Summary
+-------
+
+The rapid advancement of AI technologies has introduced new and evolving security challenges that span multiple standards development organizations (ITU-T, ETSI, ISO/IEC, NIST, etc.), each employing its own terminologies and conceptual frameworks. This proliferation of disparate vocabularies — often referred to as the "terminological Tower of Babel" — creates significant barriers to semantic interoperability, knowledge sharing, and cross-standard harmonization. An AI security and trustworthiness ontology provides a formal, shared conceptualization of the AI security domain, serving as a common semantic foundation for standardizing terminology, enabling machine-readable knowledge representation, supporting large language model integration, and facilitating the construction of queryable knowledge graphs.
+
+This draft new Technical Specification studies the quality requirements for an AI security and trustworthiness ontology — covering concepts, security domain knowledge, terminological variants, structural formality, and interoperability — and how to assess whether an ontology meets those quality requirements through a multi-dimensional quality evaluation framework with measurable metrics and a practical scoring model.
 
 History
 -------
 
 .. list-table::
-    :header-rows: 1
     :widths: 10 26 18 14 32
 
     * - Version
@@ -62,15 +116,10 @@ History
       - Approval
       - Focus Group
       - Working Group
-    * - <version>
-      - <title>
-      - <date>
-      - TIDA
-      - <acronym>
 
 To access this Document as a PDF, open the published documentation site in your web
-browser and click the PDF download link, or navigate directly to
-https://debora-com.github.io/CUTEspecs/specification.pdf.
+browser and click the PDF download link, or navigate directly to the PDF target of
+this repository.
 
 Authors
 -------
@@ -82,17 +131,14 @@ Authors
     * - Name
       - Affiliation
       - Contact
-    * - <Jane Doe>
-      - <Organization / Company>
-      - <jane.doe@example.com>
-    * - <John Smith>
-      - <Organization / Company>
-      - <john.smith@example.com>
+    * - Xiongwei Jia
+      - China Unicom
+      - jiaxw9@chinaunicom.cn
 
 Keywords
 --------
 
-Lorem, ipsum, dolor, consectetur, adipiscing.
+Artificial intelligence (AI) security, assessment, ontology, quality, semantic interoperability, trustworthiness
 
 .. raw:: latex
 
@@ -122,49 +168,16 @@ available in the group's terms of reference.
 For more news and updates about the TIDA Community, including its supporter organizations,
 please refer to the community's published resources.
 
-.. raw:: latex
-
-    \osiacenternextsection
-
 Note
 ----
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-voluptatem accusantium doloremque laudantium.
-
-.. Intellectual Property Rights — section commented out. To restore it, remove the
-   leading ".." and the indentation below, and re-add a ".. raw:: latex" block with
-   "\osiacenternextsection" before the heading (to centre it on the PDF).
-
-   Intellectual Property Rights
-   ----------------------------
-
-   ITU draws attention to the possibility that the practice or implementation of this
-   Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no
-   position concerning the evidence, validity or applicability of claimed Intellectual Property
-   Rights, whether asserted by ITU members or others outside of the Recommendation development
-   process.
-
-   As of the date of approval of this Recommendation, ITU had not received notice of intellectual
-   property, protected by patents/software copyrights, which may be required to implement this
-   Recommendation. However, implementers are cautioned that this may not represent the latest
-   information and are therefore strongly urged to consult the appropriate ITU-T databases
-   available via the ITU-T website at http://www.itu.int/ITU-T/ipr/.
-   Implementers should also be aware that the organization that originated the technically
-   equivalent document listed in the Bibliography may have received notices of intellectual
-   property required for the implementation of this Recommendation.
+*[Editor: add any note on the status of this Technical Report.]*
 
 .. raw:: latex
 
     %% Copyright notice commented out. To restore, uncomment the lines below.
     %% \vspace{4em}
-    %% \begin{center}\textcopyright{} ITU 2024\end{center}
+    %% \begin{center}\textcopyright{} ITU 2026\end{center}
     %%
     %% \medskip
     %% All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the
@@ -180,10 +193,22 @@ voluptatem accusantium doloremque laudantium.
     :numbered:
     :hidden:
 
-    chapters/01_chapter1
-    chapters/02_chapter2
-    chapters/03_chapter3
-    chapters/04_chapter4/index
-    chapters/05_annex/index
-    chapters/06_appendix/index
-    chapters/07_references
+    chapters/01_scope
+    chapters/02_references
+    chapters/03_definitions
+    chapters/04_abbreviations
+    chapters/05_conventions
+    chapters/06_overview
+    chapters/07_quality-requirements
+    chapters/08_quality-assessment-framework/index
+
+.. toctree::
+    :maxdepth: 3
+    :hidden:
+
+    chapters/09_appendix-i_use-cases
+    chapters/10_appendix-ii_methodology
+    chapters/11_appendix-iii_example-ontology/index
+    chapters/12_bibliography
+    chapters/13_annex-a_justification
+    chapters/14_gap-analysis
